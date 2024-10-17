@@ -1,0 +1,61 @@
+.head {
+  animation-name: headShake;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes headShake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+.body {
+  animation-name: bodyMove;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bodyMove {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.left.hand {
+  animation-name: lefthandHi;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 100% 0;
+}
+
+.right.hand {
+  animation-name: righthandWave;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 0 0;
+}
+
+@keyframes righthandWave {
+  from {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-160deg);
+  }
+}
+
+.left.foot {
+}
+
+.right.foot {
+}
